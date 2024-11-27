@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b6f6e1e-3849-430b-82a3-0fe150fea00a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../react_client/components/ClientChangeComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/components/GroupCRUD.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/components/InstructorChangeComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/pages/AdminGroups.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/pages/AdminWorkouts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/AdminActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/AdminActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/ClientActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/ClientActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/ClubCardComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/ClubCardComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/Groupcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/Groupcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/InstructorActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/InstructorActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/NavBarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/NavBarComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/RegisterComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/RegisterComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/pages/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/config/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/AuthController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/ClientController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/ClientController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/ClubCardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/ClubCardController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/GroupController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/GroupController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/InstructorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/InstructorController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Instructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Instructor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,38 +30,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.Auth.js.executor": "Run",
-    "Node.js.AuthController.js.executor": "Run",
-    "Node.js.CheckRole.js.executor": "Run",
-    "Node.js.Client.js.executor": "Run",
-    "Node.js.ClientController.js.executor": "Run",
-    "Node.js.InstructorController.js.executor": "Run",
-    "Node.js.RoleInitialize.js.executor": "Run",
-    "Node.js.Workout.js.executor": "Run",
-    "Node.js.WorkoutController.js.executor": "Run",
-    "Node.js.app.cjs.executor": "Run",
-    "Node.js.app.js.executor": "Run",
-    "Node.js.passport.js.executor": "Run",
-    "Node.js.swagger-autogen.js.executor": "Run",
-    "Node.js.swagger.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "javascript.nodejs.core.library.configured.version": "22.11.0",
-    "javascript.nodejs.core.library.typings.version": "22.9.1",
-    "last_opened_file_path": "C:/sem_5/FitnessClub/client",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Auth.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.AuthController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.CheckRole.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Client.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.ClientController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.InstructorController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.RoleInitialize.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Workout.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.WorkoutController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.cjs.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.passport.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.swagger-autogen.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.swagger.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.11.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.9.1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/sem_5/FitnessClub/client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\sem_5\FitnessClub\server" />
