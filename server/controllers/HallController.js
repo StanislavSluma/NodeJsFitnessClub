@@ -4,7 +4,7 @@ const Workout = require('../models/Workout');
 const HallInfo = async(req, res) => {
     const hall_id = req.params.id;
 
-    const hall = await Hall.findById(hall_id);
+    const hall = await Hall.getHallById(hall_id);
     if (!hall) {
         return res.status(404).json({message: 'Hall not found'});
     }
@@ -16,7 +16,7 @@ const HallUpdate = async(req, res) => {
     const hall_id = req.params.id;
     const {name, city, street, house_number} = req.body;
 
-    const hall = await Hall.findByIdAndUpdate(hall_id, {name, city, street, house_number}, {new: true});
+    const hall = await Hall.updateHall(hall_id, {name, city, street, house_number});
     if (!hall) {
         return res.status(404).json({message: 'Hall not found'});
     }
@@ -27,16 +27,14 @@ const HallUpdate = async(req, res) => {
 const HallDelete = async(req, res) => {
     const hall_id = req.params.id;
 
-    const hall = await Hall.findById(hall_id);
+    const hall = await Hall.getHallById(hall_id);
     if (!hall) {
         return res.status(404).json({message: 'Hall not found'});
     }
 
-    const workouts = await Workout.find({hall_id: hall_id})
-    for await (const workout of workouts) {
-        workout.hall_id = null;
-    }
-    await Hall.findByIdAndDelete(hall_id);
+    //const workouts = await Workout.getWorkoutsByHallId(hall_id)
+
+    await Hall.deleteHall(hall_id);
 
     return res.status(200).json();
 }
@@ -44,14 +42,13 @@ const HallDelete = async(req, res) => {
 const HallCreate = async(req, res) => {
     const {name, city, street, house_number} = req.body;
 
-    const hall = new Hall({name, city, street, house_number});
-    const saved_hall = await hall.save();
+    const hall = await Hall.createHall({name, city, street, house_number});
 
     return res.status(200).json({hall: saved_hall});
 }
 
 const AllHalls = async(req, res) => {
-    return res.status(200).json({coupons: await Hall.find()});
+    return res.status(200).json({halls: await Hall.getHalls()});
 }
 
 module.exports.HallInfo = HallInfo;

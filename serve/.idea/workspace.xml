@@ -5,33 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b6f6e1e-3849-430b-82a3-0fe150fea00a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../react_client/components/ClientChangeComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/components/GroupCRUD.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/components/InstructorChangeComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/pages/AdminGroups.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react_client/pages/AdminWorkouts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/AdminActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/AdminActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/ClientActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/ClientActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/ClubCardComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/ClubCardComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/Groupcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/Groupcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/InstructorActionsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/InstructorActionsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/NavBarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/NavBarComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/components/RegisterComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/components/RegisterComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/pages/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react_client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_client/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/db/connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/models/Procedures.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/config/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controllers/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/AuthController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/controllers/ClientController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/ClientController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/controllers/ClubCardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/ClubCardController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/controllers/CouponController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/CouponController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/controllers/GroupController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/GroupController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/controllers/HallController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/HallController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/controllers/InstructorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/controllers/InstructorController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/Instructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/routes/Instructor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/ClientGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/ClubCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/ClubCardCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Coupon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/DBInitialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Group.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Hall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Instructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/InstructorWorkout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Review.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Role.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/Workout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/models/WorkoutCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
     "Node.js.swagger.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "DataBase",
     "javascript.nodejs.core.library.configured.version": "22.11.0",
     "javascript.nodejs.core.library.typings.version": "22.9.1",
     "last_opened_file_path": "C:/sem_5/FitnessClub/client",
@@ -120,7 +119,7 @@
       <workItem from="1732617235957" duration="14105000" />
       <workItem from="1732636970420" duration="2553000" />
       <workItem from="1732649360739" duration="9553000" />
-      <workItem from="1732695974011" duration="13049000" />
+      <workItem from="1732695974011" duration="18075000" />
     </task>
     <servers />
   </component>

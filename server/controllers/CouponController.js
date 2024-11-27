@@ -4,7 +4,7 @@ const Client = require('../models/Client');
 const CouponInfo = async(req, res) => {
     const coupon_id = req.params.id;
 
-    const coupon = await Coupon.findById(coupon_id);
+    const coupon = await Coupon.getCouponById(coupon_id);
     if (!coupon) {
         return res.status(404).json({message: 'Coupon not found'});
     }
@@ -16,7 +16,7 @@ const CouponUpdate = async(req, res) => {
     const coupon_id = req.params.id;
     const {name, description, code, discount, end_date} = req.body;
 
-    const coupon = await Coupon.findByIdAndUpdate(coupon_id, {name, description, code, discount, end_date}, {new: true});
+    const coupon = await Coupon.updateCoupon(coupon_id, {name, description, code, discount, end_date});
     if (!coupon) {
         return res.status(404).json({message: 'Coupon not found'});
     }
@@ -27,16 +27,16 @@ const CouponUpdate = async(req, res) => {
 const CouponDelete = async(req, res) => {
     const coupon_id = req.params.id;
 
-    const coupon = await Coupon.findById(coupon_id);
+    const coupon = await Coupon.getCouponById(coupon_id);
     if (!coupon) {
         return res.status(404).json({message: 'Coupon not found'});
     }
 
-    const clients = await Client.find({coupon_id: coupon_id})
+    const clients = await Client.getClientWithCouponId(coupon_id)
     for await (const client of clients) {
-        await Client.findByIdAndUpdate(client._id, {coupon_id: null})
+        await Client.updateClientCoupon(client._id, null)
     }
-    await Coupon.findByIdAndDelete(coupon_id);
+    await Coupon.deleteCoupon(coupon_id);
 
     return res.status(200).json();
 }
@@ -44,24 +44,19 @@ const CouponDelete = async(req, res) => {
 const CouponCreate = async(req, res) => {
     const {name, description, code, discount, end_date} = req.body;
 
-    const coupon_exist = await Coupon.findOne({code: code});
+    const coupon_exist = await Coupon.getCouponByCode(code);
     if (coupon_exist) {
         return res.status(400).json({message: "Coupon already exist"});
     }
 
     let coupon;
-    if (description) {
-        coupon = new Coupon({name, description, code, discount, end_date});
-    } else {
-        coupon = new Coupon({name, code, discount, end_date});
-    }
-    const saved_coupon = await coupon.save();
+    coupon = await Coupon.createCoupon({name, description, code, discount, end_date});
 
-    return res.status(200).json({coupon: saved_coupon});
+    return res.status(200).json({coupon: coupon});
 }
 
 const AllCoupons = async(req, res) => {
-    return res.status(200).json({coupons: await Coupon.find()});
+    return res.status(200).json({coupons: await Coupon.getCoupons()});
 }
 
 module.exports.CouponInfo = CouponInfo;
