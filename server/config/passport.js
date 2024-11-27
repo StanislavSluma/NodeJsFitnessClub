@@ -1,0 +1,69 @@
+const passport = require("passport");
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const User = require("../models/User");
+const Role = require("../models/Role");
+const Client = require("../models/Client");
+const jwt = require('jsonwebtoken');
+const {ExtractJwt} = require("passport-jwt");
+const JwtStrategy = require("passport-jwt/lib/strategy");
+
+const options = {
+    jwtFromRequest: ExtractJwt.fromExtractors([
+        req => req.cookies.access
+    ]),
+    secretOrKey: process.env.ACCESS_TOKEN_SECRET
+};
+
+passport.use(
+    new JwtStrategy(options, async (jwt_payload, done) => {
+        try {
+            const user = await User.findById(jwt_payload.id);
+            if (!user) {
+                return done(null, false);
+            }
+            return done(null, user);
+        } catch (err) {
+            return done(err, false);
+        }})
+);
+
+passport.use(new GoogleStrategy({
+    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    callbackURL: "http://localhost:5000/auth/google/callback",
+}, async (accessToken, refreshToken, profile, done) => {
+    const ExistingUser = await User.findOne({google_id: profile.google_id});
+    if (ExistingUser) {
+        console.log("User already exist");
+        return done(null, profile);
+    }
+
+    const google_id = profile.id;
+    const email = profile.emails[0].value;
+    const username = profile.displayName;
+    const role = await Role.findOne({name: 'client'});
+    const role_id = role._id;
+
+    const user = new User({google_id, username, email, role_id});
+    const saved_user = await user.save();
+
+    const name = profile.name.givenName;
+    const surname = profile.name.familyName;
+    const user_id = saved_user.id;
+
+    const client = new Client({name, surname, user_id});
+    await client.save();
+
+    console.log("User created successfully");
+    done(null, profile);
+}))
+
+passport.serializeUser((user, done) => {
+    done(null, user);
+});
+
+passport.deserializeUser((user, done) => {
+    done(null, user);
+});
+
+module.exports = passport;

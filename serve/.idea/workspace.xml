@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b6f6e1e-3849-430b-82a3-0fe150fea00a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2p73FydwEORvNyCnepQb4EfaqEB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.Auth.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.AuthController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.CheckRole.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Client.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.ClientController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.InstructorController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.RoleInitialize.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Workout.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.WorkoutController.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.cjs.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.passport.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.swagger-autogen.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.swagger.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.11.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.9.1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/sem_5/FitnessClub/client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\sem_5\FitnessClub\server" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b6f6e1e-3849-430b-82a3-0fe150fea00a" name="Changes" comment="" />
+      <created>1732103187474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732103187474</updated>
+      <workItem from="1732103188492" duration="579000" />
+      <workItem from="1732103794659" duration="2381000" />
+      <workItem from="1732120417315" duration="271000" />
+      <workItem from="1732120708302" duration="6442000" />
+      <workItem from="1732183221915" duration="16772000" />
+      <workItem from="1732209766778" duration="3500000" />
+      <workItem from="1732266978222" duration="29714000" />
+      <workItem from="1732535945024" duration="5330000" />
+      <workItem from="1732541361578" duration="15664000" />
+      <workItem from="1732617235957" duration="14105000" />
+      <workItem from="1732636970420" duration="2553000" />
+      <workItem from="1732649360739" duration="9553000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+</project>
