@@ -20,11 +20,12 @@ const ClubCardComponent = (props) => {
 
     return (
         <div>
-            { card ? (
+            { card && card.club_card && card.club_card.end_date ? (
                 <div>
-                    <div>Категория: {card.category.name}</div>
-                    <div>Скидка: {card.category.discount * 100}%</div>
-                    <div>Действует до: {card.club_card.end_date}</div>
+                    <div>Категория: {card.category?.name}</div>
+                    <div>Скидка: {card.category?.discount * 100}%</div>
+                    <div>Действует до: {new Date(card.club_card.end_date).toISOString().slice(0, 10)}</div>
+                    <div>Общие траты: {card?.expenses}</div>
                 </div>
             ) : (
                 <div>У вас пока нет клубной карты :(</div>

@@ -11,6 +11,12 @@ const GroupInfo = async(req, res) => {
     return res.status(200).json({group: group});
 }
 
+const GroupCreateDefault = async(req, res) => {
+    const group = new Group({name: 'GroupDefault', max_clients: 10, max_workouts: 10, price: 40});
+    await group.save();
+    return res.status(201).json({group: group});
+}
+
 const GroupCreate = async(req, res) => {
     const {name, max_clients, max_workouts, price} = req.body;
 
@@ -72,6 +78,8 @@ module.exports.GroupInfo = GroupInfo;
 module.exports.GroupCreate = GroupCreate;
 module.exports.GroupUpdate = GroupUpdate;
 module.exports.GroupDelete = GroupDelete;
+
+module.exports.GroupCreateDefault = GroupCreateDefault;
 
 module.exports.ClientGroups = ClientGroups;
 module.exports.AllGroups = AllGroups;

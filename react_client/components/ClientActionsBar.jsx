@@ -25,8 +25,8 @@ function ClientActionsBar(props) {
     const navigate = useNavigate();
     return (
         <div>
-            <button onClick={async () => await CreateClubCard(profile)}>Получить карту</button>
             <button onClick={() => navigate('/client/groups')}>Мои группы</button>
+            <button onClick={async () => await CreateClubCard(profile)}>Получить карту</button>
         </div>
     );
 }

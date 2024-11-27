@@ -5,15 +5,15 @@ class RegisterForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: 'Client3',
-            email: 'client3@gmail.com',
-            password: '1234',
-            password_repeat: '1234',
-            name: 'Client3',
-            surname: '',
-            patronymic: '',
-            age: 18,
-            phone_number: '+375 44 333-33-33',
+            username: props.username,
+            email: props.email,
+            password: props.password,
+            password_repeat: props.password_repeat,
+            name: props.name,
+            surname: props.surname,
+            patronymic: props.patronymic,
+            age: props.age,
+            phone_number: props.phone_number,
 
             usernameValid: true,
             emailValid: true,
@@ -217,4 +217,13 @@ class RegisterForm extends Component {
     }
 }
 
+RegisterForm.defaultProps = {username: 'Client3',
+    email: 'client3@gmail.com',
+    password: '1234',
+    password_repeat: '1234',
+    name: 'Client3',
+    surname: '',
+    patronymic: '',
+    age: 18,
+    phone_number: '+375 44 333-33-33'}
 export default RegisterForm;

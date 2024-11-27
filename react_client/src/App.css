@@ -373,3 +373,87 @@
     width: 100%;
   }
 }
+
+/* FormStyles.css */
+form {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form input[type="submit"],
+form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form button {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 10px;
+}
+
+form button:hover {
+  background-color: #d32f2f;
+}
+
+form button:focus,
+form input[type="submit"]:focus {
+  outline: none;
+}
+
+.group-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.admin-group-pages {
+  margin-top: 100px;
+}

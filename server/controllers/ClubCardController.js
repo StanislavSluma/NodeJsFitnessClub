@@ -21,7 +21,7 @@ const ClientClubCardInfo = async(req, res) => {
     }
 
     console.log("category", category);
-    return res.status(200).json({club_card: club_card, category: category});
+    return res.status(200).json({club_card: club_card, category: category, expenses: client.expenses});
 }
 
 const ClubCardInfo = async(req, res) => {

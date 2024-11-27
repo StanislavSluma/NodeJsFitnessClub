@@ -11,6 +11,9 @@ import InstructorsPage from "../pages/InstructorsPage.jsx";
 import GroupsPage from "../pages/GroupsPage.jsx";
 import GroupWorkoutsPage from "../pages/GroupsWorkoutsPage.jsx";
 import ClientGroupsPage from "../pages/ClientGroupsPage.jsx";
+import AdminGroups from "../pages/AdminGroups.jsx";
+import AdminWorkoutsPage from "../pages/AdminGroups.jsx";
+import AdminGroupsPage from "../pages/AdminGroups.jsx";
 
 function App() {
   return (
@@ -40,6 +43,16 @@ function App() {
                           <InstructorWorkoutsPage/>
                       </RequireRole>
                   } />
+                  <Route path="/admin/workouts" element={
+                      <RequireRole roles={['admin']}>
+                          <AdminWorkoutsPage/>
+                      </RequireRole>
+                  }/>
+                  <Route path="/admin/groups" element={
+                      <RequireRole roles={['admin']}>
+                          <AdminGroupsPage/>
+                      </RequireRole>
+                  }/>
               </Routes>
               </AuthorizationProvider>
           </Router>

@@ -4,7 +4,7 @@ const ClientController = require('../controllers/CLientController');
 const {ensureClient, ensureAdmin, ensureRole} = require("../middleware/CheckRole");
 
 router.post('/create', ensureAdmin, ClientController.ProfileCreate)
-router.post('/:client_id/addToGroup/:group_id', ensureRole(['admin', 'client']), ClientController.AddClientToGroup)
+router.post('/:client_id/addToGroup/:group_id', ensureClient, ClientController.AddClientToGroup)
 router.post('/:client_id/leaveGroup/:group_id', ensureRole(['admin', 'client']), ClientController.ClientLeaveGroup)
 
 router.get('/all', ClientController.AllClients);

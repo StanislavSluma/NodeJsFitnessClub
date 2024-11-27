@@ -16,7 +16,7 @@ const Profile = async(req, res) => {
 
 const ProfileUpdate = async(req, res) => {
     const instructor_id = req.params.id;
-    const {name, surname, patronymic, phone_number, age, about, url_photo} = req.body;
+    const {name, surname, patronymic, phone_number, age} = req.body;
 
     const instructor = await Instructor.findById(instructor_id);
     if (!instructor) {
@@ -28,8 +28,8 @@ const ProfileUpdate = async(req, res) => {
     instructor.patronymic = patronymic;
     instructor.phone_number = phone_number;
     instructor.age = age;
-    instructor.about = about;
-    instructor.url_photo = url_photo;
+    // instructor.about = about;
+    // instructor.url_photo = url_photo;
 
     await instructor.save();
 

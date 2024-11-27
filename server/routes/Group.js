@@ -4,6 +4,7 @@ const GroupController = require('../controllers/GroupController');
 const {ensureAdmin, ensureClient} = require("../middleware/CheckRole");
 
 router.post('/create', ensureAdmin, GroupController.GroupCreate);
+router.post('/create/default', ensureAdmin, GroupController.GroupCreateDefault);
 
 router.get('/all', GroupController.AllGroups);
 router.get('/:id', GroupController.GroupInfo);

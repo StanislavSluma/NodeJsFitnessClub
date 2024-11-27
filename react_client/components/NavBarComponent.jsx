@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 import {useAuthorization} from "../context/AuthorizationContext.jsx";
-import ProfilePage from "../pages/Profile.jsx";
 
 const NavBarComponent = () => {
     const {profile, setProfile} = useAuthorization();

@@ -89,12 +89,14 @@ const Profile = async(req, res) => {
     if (accessToken) data = jwt.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
     else return res.status(403).json({message: "Access token not found"});
 
+    console.log(data);
     let profile;
     if (data.role === 'client') {
         const client = await Client.findOne({user_id: data.id});
         if (!client) {
             return res.status(400).json({message: 'Client not found'});
         }
+        console.log(client);
         profile = client;
     }
     if (data.role === 'instructor') {

@@ -6,6 +6,7 @@ const Client = require("../models/Client");
 const jwt = require('jsonwebtoken');
 const {ExtractJwt} = require("passport-jwt");
 const JwtStrategy = require("passport-jwt/lib/strategy");
+const {sign} = require("jsonwebtoken");
 
 const options = {
     jwtFromRequest: ExtractJwt.fromExtractors([
@@ -32,10 +33,11 @@ passport.use(new GoogleStrategy({
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:5000/auth/google/callback",
 }, async (accessToken, refreshToken, profile, done) => {
-    const ExistingUser = await User.findOne({google_id: profile.google_id});
+    const ExistingUser = await User.findOne({google_id: profile.id});
+    console.log(ExistingUser);
     if (ExistingUser) {
         console.log("User already exist");
-        return done(null, profile);
+        return done(null, ExistingUser);
     }
 
     const google_id = profile.id;
@@ -51,11 +53,11 @@ passport.use(new GoogleStrategy({
     const surname = profile.name.familyName;
     const user_id = saved_user.id;
 
-    const client = new Client({name, surname, user_id});
-    await client.save();
+    const newClient = new Client({name, surname, user_id});
+    const client = await newClient.save();
 
     console.log("User created successfully");
-    done(null, profile);
+    done(null, client);
 }))
 
 passport.serializeUser((user, done) => {

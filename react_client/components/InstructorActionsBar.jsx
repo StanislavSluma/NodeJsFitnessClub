@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 
-function ClientActionsBar(/*props*/) {
+function InstructorActionsBar(/*props*/) {
     const navigate = useNavigate();
     return (
         <div>
@@ -9,4 +9,4 @@ function ClientActionsBar(/*props*/) {
     );
 }
 
-export default ClientActionsBar;
+export default InstructorActionsBar;
